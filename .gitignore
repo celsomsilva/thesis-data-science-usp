@@ -1,0 +1,20 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# RStudio
+*.Rproj
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Python / Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Ignore intermediate documents
+*.docx
+*.pptx
+
