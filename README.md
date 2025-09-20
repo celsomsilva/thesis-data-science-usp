@@ -5,7 +5,7 @@
 
 
 
-### Walmart Sales Prediction - HLM3 (Machine Learning Multilevel Modeling) - 2023/2024
+# Walmart Sales Prediction - HLM3 (Machine Learning Multilevel Modeling) - 2023/2024
 
 This repository contains my thesis project, where I analyze the factors influencing Walmart's weekly sales using **multilevel modeling (HLM3)**, a **machine learning approach** for hierarchical data, and compare it against traditional **generalized linear models (GLM)**.
 The work demonstrates the effectiveness of **nonlinear hierarchical models** in **predicting sales**, particularly when the data is structured across multiple levels.
