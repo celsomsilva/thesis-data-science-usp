@@ -1,20 +1,34 @@
+# ==========================
 # System files
+# ==========================
 .DS_Store
 Thumbs.db
 
-# RStudio
-*.Rproj
-.Rproj.user/
+# ==========================
+# R temporary files
+# ==========================
 .Rhistory
 .RData
+.Rproj.user/
 .Ruserdata
+*.Rproj
 
-# Python / Jupyter
+# ==========================
+# Jupyter checkpoints
+# ==========================
 .ipynb_checkpoints/
-__pycache__/
-*.pyc
 
-# Ignore intermediate documents
+# ==========================
+# Data files
+# ==========================
+data/raw/
+*.csv
+*.xlsx
+
+# ==========================
+# Documents (intermediate versions)
+# ==========================
 *.docx
 *.pptx
+
 
