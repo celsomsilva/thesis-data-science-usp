@@ -1,154 +1,165 @@
-![R](https://img.shields.io/badge/R-4.4.0-blue?logo=r)
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
-![License](https://img.shields.io/github/license/celsomsilva/thesis-data-science-usp)
-![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+# Walmart Sales Prediction – HLM3 (Hierarchical Models, Nonlinear)
 
+> “A data scientist is not a button pusher.” — Prof. Luiz Paulo Fávero
 
-
-# Walmart Sales Prediction - HLM3 (Hierarchical Linear Models) Non Linear
-
-This repository contains my thesis project, where I analyze the factors influencing Walmart's weekly sales using **multilevel modeling (HLM3)**, a **machine learning approach** for hierarchical data, and compare it against traditional **generalized linear models (GLM)**.
-The work demonstrates the effectiveness of **nonlinear hierarchical models** in **predicting sales**, particularly when the data is structured across multiple levels.
+This repository contains my thesis project, where I analyze Walmart’s weekly sales data using **3-level hierarchical models (HLM3)** and compare them with **generalized linear models (GLMs)** that ignore the data hierarchy.
+The goal was to understand what drives weekly sales and to show how **nonlinear multilevel models** can outperform traditional approaches when the data is naturally nested (Store → Department → Week).
 
 ---
 
 ## Evaluation
 
-- **Grade:** 9.0 (University of São Paulo - USP, 2024)  
-- **Committee feedback:** *"Interesting and challenging."*  
+* **Grade:** 9.0 (University of São Paulo – USP, 2024)
+* **Committee feedback:** *“Interesting and challenging.”*
 
 ---
 
-## Repository Status
+## Project Status
 
-This repository is a **work in progress**. Current focus includes:  
-- Organizing and documenting code, datasets, and figures  
-- Gradually translating thesis sections **from Portuguese to English**  
-- Refining structure for clarity and reproducibility  
-
-Planned next steps:  
-- Publishing all code and supporting documents in this repository  
-- Extending model comparisons with **Deep Learning** and 
-- Developing a parallel version focused on **analytics & storytelling** 
-
+Work in progress — I continue to improve documentation, figures, and comparisons.
 
 ---
 
+## Academic Note
 
-## Important
+USP uses official similarity-checking systems (Turnitin / SimilarityCheck).
+All thesis submissions are automatically verified against academic databases and public sources.
+Even AI-generated text becomes traceable once published online.
 
-USP employs institutional similarity detection tools such as Turnitin / SimilarityCheck, which compare documents against extensive academic databases, repositories, and publicly available web content. Any claims of authorship or originality can therefore be officially verified by the university.
-
-It is worth noting that even texts produced with the aid of artificial intelligence, once published on repositories or web pages, can be detected by similarity tools. Moreover, faculty evaluation considers writing style, methodological consistency, and coherence between analysis, code, and results — ensuring that only genuinely original work is approved.
+The evaluation considers writing consistency, methodology, and whether the code, analysis, and text form a coherent whole — meaning only genuinely original work passes.
 
 ---
 
+## Extended Versions
 
-## Extended Version with Analytics & Storytelling
+If you want a more **applied**, **storytelling**, or **analytics-focused** version of this project:
 
-For a more **didactic and applied version**, with emphasis on **analytics, storytelling, and communication of insights**,  
-please check the complementary repository:
+**Analytics & Storytelling repo:**
+[https://github.com/celsomsilva/thesis-storytelling-usp](https://github.com/celsomsilva/thesis-storytelling-usp)
 
-[Analytics & Storytelling Repository](https://github.com/celsomsilva/thesis-storytelling-usp)
+**Quarto website version:**
+[https://github.com/celsomsilva/walmart-analytics-storytelling](https://github.com/celsomsilva/walmart-analytics-storytelling)
 
 ---
 
 ## Abstract
 
-This thesis aims to analyze factors influencing Walmart's weekly sales using Machine Learning techniques with a statistical focus. A **nonlinear 3-level Hierarchical Linear Model (HLM3)** was developed and compared step-by-step with equivalent **Generalized Linear Models (GLM)** that do not incorporate random effects.
+This thesis analyzes the factors that influence Walmart’s weekly sales using statistical machine learning techniques.
+A **nonlinear 3-level HLM (HLM3)** was built and compared with several **GLM-based models**, including versions with and without transformations (Box-Cox/Yeo-Johnson) and negative binomial alternatives.
 
-The modeling process included:
+The workflow included:
 
-- Null and full models for **GLM and multilevel approaches**, including linear regression, nonlinear regression with **Yeo-Johnson transformation**, and Multilevel Negative Binomial models.
-- Evaluation metrics such as **Log-Likelihood (LogLik)**, **Akaike Information Criterion (AIC)**, and **Bayesian Information Criterion (BIC)**.
+* Null vs full models (GLM and multilevel)
+* Linear and nonlinear setups
+* Yeo–Johnson transformation for stabilizing variance
+* Negative binomial models for overdispersed data
+* Model comparison using **LogLik, AIC, BIC**
 
-Results show that multilevel models better capture hierarchical patterns, improving prediction accuracy and interpretability for decision-making. This study demonstrates that **multilevel modeling is a promising approach** for hierarchically structured data and provides valuable insights for sales strategies.
+The results consistently show that:
 
-These findings contribute to the statistical understanding of hierarchical models and offer a foundation for future research.
+* **Hierarchical models fit the data structure better**
+* **Predictions improve** when store and department effects are modeled
+* **Interpretation becomes clearer** for decision-making
 
-**Keywords:** Box-Cox, Yeo-Johnson, Multilevel Model, Hierarchical Model, Machine Learning
+This contributes both to statistical understanding of HLMs and to practical retail insights.
 
+**Keywords:** Multilevel models, Yeo–Johnson, Box-Cox, HLM3, hierarchical data, machine learning
 
 ---
 
-## Models
+## Models Included
 
-The original linear HLM and OLS scripts were provided as exercises by Prof. Fávero, USP.  
-This project significantly extends the original scope, implementing a suite of models including GLMs, GLMMs, negative binomial models, multilevel extensions, and various transformations for model comparison.
+The initial HLM/OLS templates were provided in class by Prof. Fávero (HTML2/HTML3 exercises).
+This project expands those ideas by adding:
+
+* GLMs and GLMMs
+* Negative binomial and multilevel negative binomial models
+* Nonlinear transformations (Yeo–Johnson)
+* Full diagnostics and comparative modeling
 
 ---
 
 ## Figures
 
-Some figures are adapted from materials provided by Prof. Fávero, USP (HTML2/HTML3 exercises).  
-All other figures, including adaptations and new visualizations for binomial negative and multilevel models, were created by the author.
- 
+Some reference figures come from class material;
+all extended visualizations (AIC/BIC charts, residual diagnostics, multilevel diagrams, etc.) were created for the thesis.
 
 ---
 
 ## Project Structure
-```
 
+```
 walmart-sales-hlm3/
-│── src/
-│   ├── varejo_multinivel_hlm3.R
-│   ├── modelagem_multinivel.ipynb
-│   ├── tratamento_de_dadosfinal.ipynb
-│
-│── data/
-│   └── varejo_hlm_ready.csv
-│
-│── docs/
-│   ├── TCC_REVISADO.pdf
-│   ├── Apresentacao.pdf
-│   └── images/
-│       ├── aic_bic.png
-│       ├── boxplot.png
-│       └── ...
-│
-│── .gitignore
-│── README.md
-│── LICENSE (optional)
+  src/
+    varejo_multinivel_hlm3.R
+    modelagem_multinivel.ipynb
+    tratamento_de_dadosfinal.ipynb
 
+  data/
+    varejo_hlm_ready.csv
+
+  docs/
+    TCC_REVISADO.pdf
+    Apresentacao.pdf
+    images/
+      aic_bic.png
+      boxplot.png
+      ...
+
+  .gitignore
+  README.md
+  LICENSE               # MIT
+  LICENSE-thesis.txt    # Creative Commons (thesis)
 ```
-
 
 ---
 
 ## How to Reproduce
-1. Install the required R packages (`lme4`, `car`, `ggplot2`, etc.).
-2. Preprocess the data (already done in `src/tratamento_de_dadosfinal.ipynb`) or use `data/varejo_hlm_ready.csv` directly.
-3. Open `src/varejo_multinivel_hlm3.R` to run the full analysis, using RStudio.
-4. Alternatively, use `src/modelagem_multinivel.ipynb` in Jupyter Notebook for an exploratory workflow.
+
+1. Install R packages (`lme4`, `car`, `ggplot2`, etc.)
+2. Use the ready dataset (`data/varejo_hlm_ready.csv`) or preprocess it using
+   `src/tratamento_de_dadosfinal.ipynb`
+3. Run the full analysis in
+   `src/varejo_multinivel_hlm3.R`
+4. Or explore the notebook version:
+   `src/modelagem_multinivel.ipynb`
 
 ---
 
 ## Documentation
 
+* **Thesis (Portuguese):**
+  [`docs/TCC_REVISADO.pdf`](docs/TCC_REVISADO.pdf)
 
-- [`docs/pt/TCC_REVISADO.pdf`](docs/pt/TCC_REVISADO.pdf) – Final thesis *(in Portuguese)*  
-- [`docs/pt/Apresentacao.pdf`](docs/pt/Apresentacao.pdf) – Defense presentation slides *(in Portuguese)*  
+* **Presentation slides (Portuguese):**
+  [`docs/Apresentacao.pdf`](docs/Apresentacao.pdf)
 
-*(Coming soon: English versions)*  
-- [`docs/en/Thesis_final.pdf`](docs/en/Thesis_final.pdf) – Final thesis *(in English)*  
-- [`docs/en/Presentation.pdf`](docs/en/Presentation.pdf) – Defense presentation slides *(in English)*
+English versions coming soon:
 
-- [`docs/images/`](docs/images/) – Figures used in thesis.  
+* `docs/en/Thesis_final.pdf`
+* `docs/en/Presentation.pdf`
+
+Figures used in the thesis are under `docs/images/`.
 
 ---
 
 
-## About the Author
+## Author
 
-I’m a Data Science and Analytics specialist (USP postgraduate) and Computer Engineer (UERJ) with a career spanning from **Pascal/C/Java roots** to **modern Machine Learning and AI**.
+This project was developed by an engineer and data scientist with a background in:
 
-My academic and professional background includes:
+* Postgraduate degree in **Data Science and Analytics (USP)**
+* Bachelor's degree in **Computer Engineering (UERJ)**
+* Special interest in statistical models, interpretability, and applied AI
 
-- **Computation in general**
-- **Machine Learning**
-- **Hierarchical nonlinear mixed models (HLM3/HLM2)**, **Intraclass correlation (ICC)** and other topics about **HLM**
-- **Residual diagnostics and model validation**
-- **Deep Learning, LLMs, and Reinforcement Learning (ongoing specialization)**
+---
+
+
+## Acknowledgments
+
+- Prof. Delmo Alves de Moura (UFABC) — for his guidance and support throughout my thesis
+- Prof. Luiz Paulo Fávero (USP) — for emphasizing deep statistical foundations
+
 
 ---
 
