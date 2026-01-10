@@ -16,11 +16,15 @@ The goal was to understand what drives weekly sales and to show how **nonlinear 
 
 ## Project Status
 
-Work in progress — I continue to improve documentation, figures, and comparisons.
+This project is under active maintenance, with ongoing improvements to
+documentation, figures, and model comparisons.
 
 ---
 
 ## Academic Note
+
+This project follows USP academic integrity and originality requirements.
+
 
 USP uses official similarity-checking systems (Turnitin / SimilarityCheck).
 All thesis submissions are automatically verified against academic databases and public sources.
@@ -69,7 +73,7 @@ This contributes both to statistical understanding of HLMs and to practical reta
 
 ## Models Included
 
-The initial HLM/OLS templates were provided in class by Prof. Fávero (HTML2/HTML3 exercises).
+The initial HLM/OLS templates were provided in class by Prof. Fávero (HLM2/HLM3 exercises).
 This project expands those ideas by adding:
 
 * GLMs and GLMMs
