@@ -2,22 +2,28 @@
 
 > “A data scientist is not a button pusher.” — Prof. Luiz Paulo Fávero
 
+
+---
+---
+
+## Project Status
+
+This project is under active maintenance, with ongoing improvements to documentation, figures, and model comparisons.
+
+The repository is intentionally not in its final form yet, as the corresponding paper is still in preparation. Once the paper is completed, this and the related repositories will be finalized accordingly.
+
+---
+---
+
+
 This repository contains my thesis project, where I analyze Walmart’s weekly sales data using **3-level hierarchical models (HLM3)** and compare them with **generalized linear models (GLMs)** that ignore the data hierarchy.
 The goal was to understand what drives weekly sales and to show how **nonlinear multilevel models** can outperform traditional approaches when the data is naturally nested (Store → Department → Week).
 
----
 
 ## Evaluation
 
 * **Grade:** 9.0 (University of São Paulo – USP, 2024)
 * **Committee feedback:** *“Interesting and challenging.”*
-
----
-
-## Project Status
-
-This project is under active maintenance, with ongoing improvements to
-documentation, figures, and model comparisons.
 
 ---
 
@@ -90,7 +96,7 @@ all extended visualizations (AIC/BIC charts, residual diagnostics, multilevel di
 
 ---
 
-## Project Structure
+## Project Structure (It will be translated into English)
 
 ```
 walmart-sales-hlm3/
@@ -178,4 +184,3 @@ This project was developed by an engineer and data scientist with a background i
 
 - [LinkedIn](https://linkedin.com/in/celso-m-silva)  
 - Or open an [issue](https://github.com/celsomsilva/thesis-data-science-usp/issues)
-
