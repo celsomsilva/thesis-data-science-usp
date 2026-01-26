@@ -1,0 +1,68 @@
+# =======================================
+# R / RStudio
+# =======================================
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+.Rproj
+.Rprofile
+.Renviron
+.Rapp.history
+
+# Cache RMarkdown/Quarto
+*_cache/
+cache/
+*.utf8.md
+*.knit.md
+
+# Local packages and libraries
+/renv/library/
+renv.lock
+
+# =======================================
+# Quarto / RMarkdown outputs
+# =======================================
+*.html
+*.pdf
+*.docx
+*.pptx
+*.tex
+*.log
+*.out
+*.aux
+*.toc
+*.nav
+*.snm
+
+# =======================================
+# Python
+# =======================================
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+.venv/
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# =======================================
+# Data (keep only raw/processed controlled)
+# =======================================
+data/*.csv
+data/*.xlsx
+data/*.parquet
+!data/README.md   # keep instructions, if any
+
+
+# =======================================
+# Sistema / Editor
+# =======================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
