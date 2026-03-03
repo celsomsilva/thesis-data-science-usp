@@ -99,22 +99,18 @@ all extended visualizations (AIC/BIC charts, residual diagnostics, multilevel di
 ## Project Structure (It will be translated into English)
 
 ```
-walmart-sales-hlm3/
+thesis-data-science-usp/
   src/
-    varejo_multinivel_hlm3.R
-    modelagem_multinivel.ipynb
-    tratamento_de_dadosfinal.ipynb
-
+  
   data/
-    varejo_hlm_ready.csv
 
   docs/
-    TCC_REVISADO.pdf
-    Apresentacao.pdf
-    images/
-      aic_bic.png
-      boxplot.png
-      ...
+    pt/ 	
+    en/
+    
+  charts/
+    pt/
+    en/
 
   .gitignore
   README.md
@@ -127,29 +123,23 @@ walmart-sales-hlm3/
 ## How to Reproduce
 
 1. Install R packages (`lme4`, `car`, `ggplot2`, etc.)
-2. Use the ready dataset (`data/varejo_hlm_ready.csv`) or preprocess it using
+2. Use the ready dataset (`data/walmart_forecast.csv`) or preprocess it using
    `src/tratamento_de_dadosfinal.ipynb`
 3. Run the full analysis in
-   `src/varejo_multinivel_hlm3.R`
-4. Or explore the notebook version:
-   `src/modelagem_multinivel.ipynb`
+   `src/multilevel_retail.R`
 
 ---
 
 ## Documentation
 
 * **Thesis (Portuguese):**
-  [`docs/TCC_REVISADO.pdf`](docs/TCC_REVISADO.pdf)
+  [`docs/pt/TCC.pdf`](docs/pt/TCC.pdf)
 
-* **Presentation slides (Portuguese):**
-  [`docs/Apresentacao.pdf`](docs/Apresentacao.pdf)
+* **Thesis (english):**
+  [`docs/en/thesis.pdf`](docs/en/thesis.pdf)
 
-English versions coming soon:
 
-* `docs/en/Thesis_final.pdf`
-* `docs/en/Presentation.pdf`
-
-Figures used in the thesis are under `docs/images/`.
+Figures used in the thesis are under `charts/`.
 
 ---
 
@@ -159,7 +149,7 @@ Figures used in the thesis are under `docs/images/`.
 This project was developed by an engineer and data scientist with a background in:
 
 * Postgraduate degree in **Data Science and Analytics (USP)**
-* Bachelor's degree in **Computer Engineering (UERJ)**
+* Bachelor of **Science in Electrical and Computer Engineering (UERJ)**
 * Special interest in statistical models, interpretability, and applied AI
 
 ---
@@ -173,12 +163,6 @@ This project was developed by an engineer and data scientist with a background i
 
 ---
 
-## License
-
-- The source code in this repository is licensed under the [MIT License](./LICENSE).
-- The thesis document is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](./LICENSE-thesis.txt).
-
----
 
 ## Contact  
 
