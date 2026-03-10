@@ -1,6 +1,18 @@
 # Walmart Sales Prediction – HLM3 (Hierarchical Models, Nonlinear)
 
-> “A data scientist is not a button pusher.” — Prof. Luiz Paulo Fávero
+> “A data scientist is not a button pusher.” — Prof. Luiz Paulo Fávero - USP
+
+
+## Research Paper
+
+The research presented in this repository is described in the paper:
+
+**Nonlinear Multilevel Model for Weekly Sales Prediction**
+
+
+A short description of the future paper and its academic context is available in:
+
+`docs/en/README.md`
 
 
 ---
@@ -17,7 +29,7 @@ The repository is intentionally not in its final form yet, as the corresponding 
 
 
 This repository contains my thesis project, where I analyze Walmart’s weekly sales data using **3-level hierarchical models (HLM3)** and compare them with **generalized linear models (GLMs)** that ignore the data hierarchy.
-The goal was to understand what drives weekly sales and to show how **nonlinear multilevel models** can outperform traditional approaches when the data is naturally nested (Store → Department → Week).
+The goal was to understand what drives weekly sales and to show how **nonlinear multilevel models** can outperform traditional approaches when the data is naturally nested (Store -> Department -> Week).
 
 
 ## Evaluation
@@ -96,7 +108,7 @@ all extended visualizations (AIC/BIC charts, residual diagnostics, multilevel di
 
 ---
 
-## Project Structure (It will be translated into English)
+## Project Structure
 
 ```
 thesis-data-science-usp/
@@ -117,6 +129,14 @@ thesis-data-science-usp/
   LICENSE               # MIT
   LICENSE-thesis.txt    # Creative Commons (thesis)
 ```
+---
+
+## Data
+
+Data is not included.
+
+
+Use the public Walmart Weekly Sales dataset.
 
 ---
 
@@ -132,12 +152,15 @@ thesis-data-science-usp/
 
 ## Documentation
 
+* **Research paper (English):**
+[Future paper](https://github.com/celsomsilva/thesis-data-science-usp/tree/main/doc/en)
+
 * **Thesis (Portuguese):**
-  [`docs/pt/TCC.pdf`](docs/pt/TCC.pdf)
+[Original thesis](https://github.com/celsomsilva/thesis-data-science-usp/tree/main/doc/pt)
 
-* **Thesis (english):**
-  [`docs/en/thesis.pdf`](docs/en/thesis.pdf)
+Additional context about the research paper is available in:
 
+`docs/en/README.md`
 
 Figures used in the thesis are under `charts/`.
 

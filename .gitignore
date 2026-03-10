@@ -5,6 +5,7 @@
 .RData
 .Rproj.user/
 .Ruserdata
+*.Rproj
 .Rproj
 .Rprofile
 .Renviron

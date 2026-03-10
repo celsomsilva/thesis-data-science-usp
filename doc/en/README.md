@@ -18,4 +18,4 @@ A research paper based on this work will be officially released on **arXiv** in 
 
 The original thesis (in Portuguese) is available in this repository:
 
-`docs/pt/TCC.pdf`](blob/main/doc/pt/TCC.pdf)
+[Original thesis](https://github.com/celsomsilva/thesis-data-science-usp/tree/main/doc/pt)
