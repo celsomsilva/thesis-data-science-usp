@@ -1,6 +1,6 @@
-# Walmart Sales Prediction – HLM3 (Hierarchical Models, Nonlinear)
+# Walmart Sales Prediction - HLM3 (Hierarchical Models, Nonlinear)
 
-> “A data scientist is not a button pusher.” — Prof. Luiz Paulo Fávero - USP
+> “A data scientist is not a button pusher.” - Prof. Luiz Paulo Fávero, USP
 
 
 ## Research Paper
@@ -34,7 +34,7 @@ The goal was to understand what drives weekly sales and to show how **nonlinear 
 
 ## Evaluation
 
-* **Grade:** 9.0 (University of São Paulo – USP, 2024)
+* **Grade:** 9.0 (University of São Paulo - USP, 2024)
 * **Committee feedback:** *“Interesting and challenging.”*
 
 ---
@@ -73,7 +73,7 @@ The workflow included:
 
 * Null vs full models (GLM and multilevel)
 * Linear and nonlinear setups
-* Yeo–Johnson transformation for stabilizing variance
+* Yeo-Johnson transformation for stabilizing variance
 * Negative binomial models for overdispersed data
 * Model comparison using **LogLik, AIC, BIC**
 
@@ -85,7 +85,7 @@ The results consistently show that:
 
 This contributes both to statistical understanding of HLMs and to practical retail insights.
 
-**Keywords:** Multilevel models, Yeo–Johnson, Box-Cox, HLM3, hierarchical data, machine learning
+**Keywords:** Multilevel models, Yeo-Johnson, Box-Cox, HLM3, hierarchical data, machine learning
 
 ---
 
@@ -96,7 +96,7 @@ This project expands those ideas by adding:
 
 * GLMs and GLMMs
 * Negative binomial and multilevel negative binomial models
-* Nonlinear transformations (Yeo–Johnson)
+* Nonlinear transformations (Yeo-Johnson)
 * Full diagnostics and comparative modeling
 
 ---
@@ -113,6 +113,9 @@ all extended visualizations (AIC/BIC charts, residual diagnostics, multilevel di
 ```
 thesis-data-science-usp/
   src/
+   R/
+   notebook/
+   python/
   
   data/
 
@@ -132,6 +135,7 @@ thesis-data-science-usp/
 ---
 
 ## Data
+
 
 Data is not included.
 
