@@ -48,7 +48,7 @@ USP uses official similarity-checking systems (Turnitin / SimilarityCheck).
 All thesis submissions are automatically verified against academic databases and public sources.
 Even AI-generated text becomes traceable once published online.
 
-The evaluation considers writing consistency, methodology, and whether the code, analysis, and text form a coherent whole — meaning only genuinely original work passes.
+The evaluation considers writing consistency, methodology, and whether the code, analysis, and text form a coherent whole - meaning only genuinely original work passes.
 
 ---
 
@@ -184,8 +184,8 @@ This project was developed by an engineer and data scientist with a background i
 
 ## Acknowledgments
 
-- Prof. Delmo Alves de Moura (UFABC) — for his guidance and support throughout my thesis
-- Prof. Luiz Paulo Fávero (USP) — for emphasizing deep statistical foundations
+- Prof. Delmo Alves de Moura (UFABC) - for his guidance and support throughout my thesis
+- Prof. Luiz Paulo Fávero (USP) - for emphasizing deep statistical foundations
 
 
 ---
