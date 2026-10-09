@@ -52,7 +52,7 @@ The evaluation considers writing consistency, methodology, and whether the code,
 
 ---
 
-## Extended Versions
+<!-- ## Extended Versions
 
 If you want a more **applied**, **storytelling**, or **analytics-focused** version of this project:
 
@@ -60,7 +60,16 @@ If you want a more **applied**, **storytelling**, or **analytics-focused** versi
 [https://github.com/celsomsilva/thesis-storytelling-usp](https://github.com/celsomsilva/thesis-storytelling-usp)
 
 **Quarto website version:**
-[https://github.com/celsomsilva/walmart-analytics-storytelling](https://github.com/celsomsilva/walmart-analytics-storytelling)
+[https://github.com/celsomsilva/walmart-analytics-storytelling](https://github.com/celsomsilva/walmart-analytics-storytelling)  -->
+
+## Related Projects
+
+The following projects are currently under development:
+
+- **Walmart Analytics & Storytelling:** Exploratory data analysis, statistical modeling, and data storytelling.
+- **Quarto Website:** Research methodology, results, and model comparisons presented in a more accessible format.
+
+Both projects will be published when ready.
 
 ---
 
